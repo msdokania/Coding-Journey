@@ -13,6 +13,11 @@ Output: true
 Explanation: '1' is repeating.
 */
 
+/*
+Solution 1 -
+Time Complexity O(n)
+Space Complexity O(n)
+*/
 import java.util.HashSet;
 import java.util.Set;
 
@@ -29,3 +34,23 @@ public class Solution {
     return false;
   }
 }
+
+
+/*
+Solution 2 -
+Time Complexity O(n * log(n))
+Space Complexity O(1)
+*/
+import java.util.Arrays;
+
+ class Solution {
+     public boolean containsDuplicate(int[] nums) {
+         Arrays.sort(nums);
+         for (int i = 0; i < nums.length - 1; i++) {
+             if (nums[i] == nums[i + 1]) {
+                 return true;
+             }
+         }
+         return false;
+     }
+ }
