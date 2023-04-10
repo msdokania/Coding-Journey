@@ -10,7 +10,7 @@ Output: [[-3, 1, 2], [-2, 0, 2], [-2, 1, 1], [-1, 0, 1]]
 Explanation: There are four unique triplets whose sum is equal to zero. smallest sum.'
 */
 /*
-Time Complexity O(nlog(n))
+Time Complexity O(n*n)
 Space complexity O(n)
 */
 class Solution {
